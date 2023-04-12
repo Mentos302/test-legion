@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./styles.module.scss";
-import { Button } from "../../../components/button";
+import { Button } from "../../components/button";
 
 export const RaritySection = () => {
   return (
@@ -121,7 +123,7 @@ export const RaritySection = () => {
                   width={50}
                   height={50}
                 />
-                <span>an offer that won't come knockingagain!</span>
+                <span>{"an offer that won't come knockingagain!"}</span>
               </div>
             </div>
           </div>

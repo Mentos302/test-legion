@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./styles.module.scss";
-import { Button } from "../../../components/button";
+import { Button } from "../../components/button";
 
 export const TradingPartnerSection = () => {
   return (

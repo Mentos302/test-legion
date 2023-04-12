@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "../../../components/button";
-import { Header } from "../../../components/header";
+import { Button } from "../../components/button";
+import { Header } from "../../components/header";
 
 import styles from "./styles.module.scss";
 import Image from "next/image";
