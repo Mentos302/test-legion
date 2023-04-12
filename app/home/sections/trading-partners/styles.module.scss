@@ -1,0 +1,43 @@
+.trading {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: 43%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  b {
+    font-family: "Squada One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 81px;
+  }
+  p {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 44px;
+    span {
+      text-decoration: underline;
+      text-underline-offset: 10px;
+      text-decoration-thickness: 4px;
+      text-decoration-color: #22f5c3;
+    }
+  }
+}
+.partners {
+  margin-bottom: 30px;
+  margin-top: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logos {
+    display: flex;
+    gap: 20px;
+  }
+}

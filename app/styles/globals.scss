@@ -1,0 +1,22 @@
+@import "./normalize";
+@import "./reset";
+// @import "./fonts";
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Squada+One&display=swap");
+
+body {
+  background: #06081a;
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 2100px;
+  overflow: hidden;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}

@@ -1,0 +1,42 @@
+.wrapper {
+  height: 100vh;
+  max-height: 1000px;
+  background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/bgs/home-hero.png") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.root {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h1 {
+    font-family: "Squada One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 114px;
+    line-height: 110px;
+    span {
+      color: #22f5c3;
+    }
+  }
+  p {
+    margin-bottom: 30px;
+    width: 75%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 31px;
+  }
+}

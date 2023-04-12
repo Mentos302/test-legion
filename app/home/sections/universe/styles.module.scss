@@ -1,0 +1,201 @@
+.top {
+  padding-top: 500px;
+  padding-bottom: 500px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7),
+      rgba(6, 8, 26, 0)
+    ),
+    url("/bgs/universe.svg") no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.title {
+  position: relative;
+  background: linear-gradient(
+    91.89deg,
+    #fff 0.45%,
+    hsla(0, 0%, 100%, 0.3) 104.83%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  span {
+    font-family: Squada One, sans-serif;
+    font-size: 161px;
+    line-height: 188px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50em;
+    height: 7em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 1px solid #fff;
+    border-radius: 0.625em;
+  }
+  &.right::before {
+    right: -30em;
+  }
+  &.left {
+    padding-left: 205px;
+    &::before {
+      left: -40em;
+    }
+  }
+}
+.benefits {
+  padding: 0 140px;
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  align-items: center;
+  gap: 50px;
+  justify-items: center;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    span {
+      max-width: 280px;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 25px;
+    }
+  }
+}
+.prevs {
+  padding: 0 140px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.prev {
+  position: relative;
+  height: 400px;
+}
+.inner {
+  height: 84%;
+  padding: 30px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  b {
+    font-family: "Squada One";
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 71px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    width: 90%;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.left_text {
+  padding-left: 40px;
+}
+
+.right_text {
+  padding-left: 60px;
+}
+.bottom {
+  background: linear-gradient(
+      rgba(6, 8, 26, 1),
+      rgba(6, 8, 26, 0.8),
+      rgba(6, 8, 26, 0)
+    ),
+    url("/bgs/bottom.png") no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.collection {
+  padding-bottom: 100px;
+  margin-top: 245px;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 60px;
+}
+.meta {
+  padding-top: 10px;
+  b {
+    background: linear-gradient(
+      92.84deg,
+      #ffffff 3.33%,
+      rgba(255, 255, 255, 0) 115%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 101px;
+    font-family: "Squada One";
+  }
+  p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    width: 90%;
+  }
+}
+.label {
+  width: 77%;
+  margin-top: 45px;
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #000000;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+}
+.details {
+  position: relative;
+}
+.details_inner {
+  z-index: 33;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  padding-top: 35px;
+  background-size: cover;
+  b {
+    font-family: "Squada One";
+    font-weight: 400;
+    font-size: 40px;
+  }
+  ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    li {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      .key {
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.root {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+.main {
+  display: flex;
+  align-items: center;
+  nav {
+    display: flex;
+    gap: 50px;
+  }
+}
+.lang {
+  margin: 0 20px 0 40px;
+  padding: 5px;
+  background: #242e28;
+  border: 3px solid #22f5c3;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  height: 45px;
+  width: 150px;
+  cursor: pointer;
+  span {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.btn::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(/bgs/header-btn.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.btn::after {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5px;
+  height: 100%;
+  width: 80%;
+  box-shadow: 0px 0px 74px rgba(34, 245, 195, 0.55);
+}
