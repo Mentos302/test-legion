@@ -1,0 +1,74 @@
+.root {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(
+      rgba(6, 8, 26, 1),
+      rgba(6, 8, 26, 0.4),
+      rgba(6, 8, 26, 1),
+      rgba(6, 8, 26, 1)
+    ),
+    url("/bgs/how-to-mint.png") no-repeat;
+  background-size: 100% 1200px;
+  background-position: top;
+  h2 {
+    display: block;
+    font-size: 97px;
+    background: linear-gradient(
+      92.28deg,
+      #ffffff 4.66%,
+      rgba(255, 255, 255, 0) 40.9%
+    );
+  }
+}
+.inner {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+
+  div {
+    width: 85%;
+    b {
+      margin-bottom: 26px;
+      font-family: "Squada One";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 39px;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: #22f5c3;
+    }
+    p {
+      min-height: 100px;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 30px;
+      span {
+        color: #22f5c3;
+      }
+    }
+    div {
+      margin-top: 80px;
+    }
+    ul {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      li {
+        display: flex;
+        gap: 10px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 30px;
+        span {
+          margin-top: -6px;
+          span {
+            color: #22f5c3;
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,7 +2,10 @@
 
 import Image from "next/image";
 import styles from "./styles.module.scss";
-import { Button } from "../../components/button";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
+import { Autoplay } from "swiper";
 
 export const UniverseSection = () => {
   return (
@@ -205,7 +208,6 @@ export const UniverseSection = () => {
                 We created this collection to reward our community and welcome
                 the world to the Legion Universe.
               </p>
-
               <div className={styles.label}>
                 <Image
                   src="/images/benefit3.svg"
@@ -268,15 +270,55 @@ export const UniverseSection = () => {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            width: "100%",
-            height: "550px",
-            position: "relative",
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={"auto"}
+          loop={true}
+          autoplay={{
+            delay: 1500,
           }}
+          modules={[Autoplay]}
         >
-          <Image alt="Mountains" src="/static/carousel.png" fill={true} />
-        </div>
+          <SwiperSlide>
+            <Image src="/static/nft2.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft3.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft4.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft5.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft6.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft7.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft1.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft2.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft3.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft4.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft5.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft6.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/static/nft7.png" alt="NFT" width={284} height={424} />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   );

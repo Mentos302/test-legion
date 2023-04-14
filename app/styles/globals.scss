@@ -20,3 +20,12 @@ main {
   width: 1320px;
   margin: 0 auto;
 }
+
+h2.gradient {
+  font-family: "Squada One";
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-transform: uppercase;
+}

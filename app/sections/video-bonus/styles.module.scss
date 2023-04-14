@@ -84,7 +84,11 @@
     font-weight: 400;
     font-size: 42px;
     line-height: 70px;
+    span {
+      color: #6a6b76;
+    }
   }
+
   .btns {
     margin-top: 35px;
     display: flex;

@@ -1,0 +1,76 @@
+.root {
+  margin-top: -400px;
+  height: 120vh;
+  position: relative;
+  background: linear-gradient(
+      rgba(6, 8, 26, 1),
+      rgba(6, 8, 26, 1),
+      rgba(6, 8, 26, 0.4),
+      rgba(6, 8, 26, 0.6)
+    ),
+    url("/bgs/roadmap.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: top;
+}
+.inner {
+  padding-top: 300px;
+  display: flex;
+  gap: 100px;
+  h2 {
+    display: block;
+    font-size: 97px;
+    background: linear-gradient(
+      92.28deg,
+      #ffffff 12.66%,
+      rgba(255, 255, 255, 0) 99.9%
+    );
+  }
+}
+.phases {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.phase {
+  display: flex;
+  gap: 25px;
+  b {
+    display: block;
+    min-width: 80px;
+    font-family: "Squada One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    li {
+      display: flex;
+      gap: 20px;
+      div {
+        position: relative;
+        width: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          height: 7px;
+          width: 7px;
+          transform: translate(-50%, -50%);
+          box-shadow: 0px 0px 18px rgba(34, 245, 195, 0.65);
+        }
+      }
+      span {
+        font-size: 15px;
+        line-height: 28px;
+      }
+    }
+  }
+}

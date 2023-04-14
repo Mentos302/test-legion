@@ -1,0 +1,129 @@
+.root {
+  position: relative;
+  padding-bottom: 210px;
+  background: linear-gradient(
+      rgba(6, 8, 26, 1),
+      rgba(6, 8, 26, 1),
+      rgba(6, 8, 26, 0.4),
+      rgba(6, 8, 26, 0.6)
+    ),
+    url("/bgs/team.png") no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+}
+
+.team {
+  margin-bottom: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.member {
+  position: relative;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  font-family: "Squada One";
+  text-transform: uppercase;
+  background: linear-gradient(
+    108.73deg,
+    #ffffff 9.38%,
+    rgba(255, 255, 255, 0) 114.64%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.inner {
+  position: absolute;
+  top: 0;
+  padding: 35px 25px;
+}
+.header {
+  display: flex;
+  gap: 20px;
+}
+.meta {
+  display: flex;
+  flex-direction: column;
+  b {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 31px;
+  }
+  span {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+.links {
+  display: flex;
+  gap: 15px;
+}
+.about {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  li {
+    display: flex;
+    gap: 10px;
+    span {
+      margin-top: -4px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}
+.slide {
+  padding: 70px 30px;
+  border: 3px solid #ffffff;
+  border-radius: 35px;
+  p {
+    margin-top: 35px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+.title_slide {
+  min-height: 100%;
+  padding: 120px 30px 90px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 3px solid #22f5c3;
+  box-shadow: 0px 0px 74px rgba(34, 245, 195, 0.05);
+  backdrop-filter: blur(5px);
+  h2 {
+    font-size: 97px;
+  }
+  h2 {
+    display: block;
+    font-size: 97px;
+    background: linear-gradient(
+      92.28deg,
+      #ffffff 12.66%,
+      rgba(255, 255, 255, 0) 99.9%
+    );
+  }
+}
+.common_slide {
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  backdrop-filter: blur(5px);
+  b {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 31px;
+  }
+}
