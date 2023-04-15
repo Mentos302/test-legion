@@ -3,17 +3,32 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import { Button } from "../../components/button";
+import ReactPlayer from "react-player";
 
 export const VideoBonusSection = () => {
   return (
     <section className={styles.root}>
       <div className="container">
         <div className={styles.video}>
-          <Image
-            src="/static/video.png"
-            alt="Picture of the video"
-            width={1160}
-            height={760}
+          <ReactPlayer
+            url="/static/promo.mp4"
+            className="react-player"
+            width="100%"
+            height="100%"
+            style={{ marginTop: "180px" }}
+            playing
+            light
+            controls
+            playIcon={
+              <div className={styles.video_inner}>
+                <Image
+                  src="/static/video.png"
+                  alt="Picture of the video"
+                  fill
+                  style={{ objectFit: "contain" }}
+                />
+              </div>
+            }
           />
         </div>
         <div className={styles.bonus}>

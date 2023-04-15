@@ -127,7 +127,10 @@ export const RaritySection = () => {
               </div>
             </div>
           </div>
-          <div style={{ width: "100%", height: "500px", position: "relative" }}>
+          <div
+            style={{ width: "100%", height: "500px", position: "relative" }}
+            className={styles.bg}
+          >
             <Image alt="Mountains" src="/bgs/exchange.png" fill={true} />
           </div>
         </div>

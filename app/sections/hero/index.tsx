@@ -34,7 +34,13 @@ export const HeroSection = () => {
                 </span>
               </Button>
             </div>
-            <Image src="/images/card.jpg" alt="Flag" width={370} height={550} />
+            <Image
+              src="/images/card.jpg"
+              alt="Flag"
+              width={370}
+              height={550}
+              className={styles.nft}
+            />
           </div>
         </div>
       </div>

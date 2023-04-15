@@ -5,6 +5,9 @@
   justify-content: space-between;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
 }
 .main {
   display: flex;
@@ -12,6 +15,9 @@
   nav {
     display: flex;
     gap: 50px;
+  }
+  @media (max-width: 500px) {
+    display: none;
   }
 }
 .lang {

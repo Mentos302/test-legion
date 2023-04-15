@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <main>
         <HeroSection />
-        {/* <SliderSection /> */}
+        <SliderSection />
         <VideoBonusSection />
         <TradingPartnerSection />
         <UniverseSection />

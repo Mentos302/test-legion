@@ -75,6 +75,12 @@ export const Slider = ({
           }}
           style={{ paddingLeft: halfContainer + `px` }}
           onSlideChange={({ activeIndex }) => setActiveSlide(activeIndex + 1)}
+          breakpoints={{
+            500: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+          }}
         >
           {children.map((child, i) => (
             <SwiperSlide key={i}>{child}</SwiperSlide>

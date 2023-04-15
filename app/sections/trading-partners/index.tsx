@@ -2,20 +2,34 @@
 
 import Image from "next/image";
 import styles from "./styles.module.scss";
-import { Button } from "../../components/button";
 
 export const TradingPartnerSection = () => {
   return (
     <section>
       <div className="container">
         <div className={styles.trading}>
-          <div style={{ width: "100%", height: "600px", position: "relative" }}>
+          <div
+            style={{ width: "100%", height: "600px", position: "relative" }}
+            className={styles.desktop}
+          >
             <Image
               src="/bgs/interrupter.png"
               alt="Bell icon"
               fill={true}
               style={{ objectFit: "cover" }}
             />
+          </div>
+          <div className={styles.mobile}>
+            <div
+              style={{ width: "100%", height: "700px", position: "relative" }}
+            >
+              <Image
+                src="/bgs/digital-mobile.png"
+                alt="Bell icon"
+                fill={true}
+                style={{ objectFit: "contain" }}
+              />
+            </div>
           </div>
 
           <div className={styles.text}>

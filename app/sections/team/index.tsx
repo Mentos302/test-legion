@@ -10,6 +10,7 @@ export const TeamSection = () => {
           <div className={styles.member}>
             <div
               style={{ width: "100%", height: "600px", position: "relative" }}
+              className={styles.bg}
             >
               <Image
                 src="/images/team.png"
@@ -23,6 +24,7 @@ export const TeamSection = () => {
           <div className={styles.member}>
             <div
               style={{ width: "100%", height: "600px", position: "relative" }}
+              className={styles.bg}
             >
               <Image
                 src="/bgs/team.svg"
@@ -116,6 +118,7 @@ export const TeamSection = () => {
           <div className={styles.member}>
             <div
               style={{ width: "100%", height: "600px", position: "relative" }}
+              className={styles.bg}
             >
               <Image
                 src="/bgs/team.svg"
@@ -197,6 +200,7 @@ export const TeamSection = () => {
           <div className={styles.member}>
             <div
               style={{ width: "100%", height: "600px", position: "relative" }}
+              className={styles.bg}
             >
               <Image
                 src="/bgs/team.svg"
@@ -293,6 +297,7 @@ export const TeamSection = () => {
           <div className={styles.member}>
             <div
               style={{ width: "100%", height: "600px", position: "relative" }}
+              className={styles.bg}
             >
               <Image
                 src="/bgs/team.svg"
@@ -385,6 +390,7 @@ export const TeamSection = () => {
           <div className={styles.member}>
             <div
               style={{ width: "100%", height: "600px", position: "relative" }}
+              className={styles.bg}
             >
               <Image
                 src="/bgs/team.svg"
@@ -448,57 +454,59 @@ export const TeamSection = () => {
           </div>
         </div>
       </div>
-      <Slider options={{ spaceBetween: 70, slidesPerView: 1.5 }}>
-        <div className={`${styles.slide} ${styles.title_slide}`}>
-          <h2 className="gradient">THE UNIVERSE</h2>
-          <p>
-            We have created a new Super-Powered Universe with an initial 5
-            feature films. We plan to grow and expand like the Marvel Universe
-            and bring this new Universe to theater screens, computer screens,
-            tablet screens and to your phone. Join us as we create the films,
-            video games, comic books, novels, augmented reality, virtual
-            reality, NFTs and step into the metaverse!
-          </p>
-        </div>
-        <div className={`${styles.slide} ${styles.common_slide}`}>
-          <Image
-            src="/images/universe1.png"
-            alt="Spider man"
-            width={210}
-            height={310}
-            style={{ objectFit: "contain" }}
-          />
-          <div>
-            <b>Powers of the past</b>
+      <div className={styles.slider}>
+        <Slider options={{ spaceBetween: 70, slidesPerView: 1.5 }}>
+          <div className={`${styles.slide} ${styles.title_slide}`}>
+            <h2 className="gradient">THE UNIVERSE</h2>
             <p>
-              Bree Powers, a teenager, is struck by lightning and goes into a
-              coma. Two days later she wakes in a hospital bed, but has been
-              living the life of an ancient magic user’s apprentice for many
-              years. Her connection to the apprentice brings magic back and
-              dangers the world has not faced for over 4000 years.
+              We have created a new Super-Powered Universe with an initial 5
+              feature films. We plan to grow and expand like the Marvel Universe
+              and bring this new Universe to theater screens, computer screens,
+              tablet screens and to your phone. Join us as we create the films,
+              video games, comic books, novels, augmented reality, virtual
+              reality, NFTs and step into the metaverse!
             </p>
           </div>
-        </div>
-        <div className={`${styles.slide} ${styles.common_slide}`}>
-          <Image
-            src="/images/universe1.png"
-            alt="Spider man"
-            width={210}
-            height={310}
-            style={{ objectFit: "contain" }}
-          />
-          <div>
-            <b>Powers of the past</b>
-            <p>
-              Bree Powers, a teenager, is struck by lightning and goes into a
-              coma. Two days later she wakes in a hospital bed, but has been
-              living the life of an ancient magic user’s apprentice for many
-              years. Her connection to the apprentice brings magic back and
-              dangers the world has not faced for over 4000 years.
-            </p>
+          <div className={`${styles.slide} ${styles.common_slide}`}>
+            <Image
+              src="/images/universe1.png"
+              alt="Spider man"
+              width={210}
+              height={310}
+              style={{ objectFit: "contain" }}
+            />
+            <div>
+              <b>Powers of the past</b>
+              <p>
+                Bree Powers, a teenager, is struck by lightning and goes into a
+                coma. Two days later she wakes in a hospital bed, but has been
+                living the life of an ancient magic user’s apprentice for many
+                years. Her connection to the apprentice brings magic back and
+                dangers the world has not faced for over 4000 years.
+              </p>
+            </div>
           </div>
-        </div>
-      </Slider>
+          <div className={`${styles.slide} ${styles.common_slide}`}>
+            <Image
+              src="/images/universe1.png"
+              alt="Spider man"
+              width={210}
+              height={310}
+              style={{ objectFit: "contain" }}
+            />
+            <div>
+              <b>Powers of the past</b>
+              <p>
+                Bree Powers, a teenager, is struck by lightning and goes into a
+                coma. Two days later she wakes in a hospital bed, but has been
+                living the life of an ancient magic user’s apprentice for many
+                years. Her connection to the apprentice brings magic back and
+                dangers the world has not faced for over 4000 years.
+              </p>
+            </div>
+          </div>
+        </Slider>
+      </div>
     </section>
   );
 };

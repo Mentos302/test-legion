@@ -19,6 +19,18 @@
       rgba(255, 255, 255, 0) 40.9%
     );
   }
+  @media (max-width: 500px) {
+    display: block;
+    padding-top: 100px;
+    h2 {
+      font-size: 55px;
+      background: linear-gradient(
+        92.28deg,
+        #ffffff 4.66%,
+        rgba(255, 255, 255, 0) 99.9%
+      );
+    }
+  }
 }
 .inner {
   margin-top: 70px;
@@ -68,6 +80,16 @@
             color: #22f5c3;
           }
         }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    div {
+      div {
+        display: none;
       }
     }
   }

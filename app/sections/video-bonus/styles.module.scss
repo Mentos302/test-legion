@@ -1,27 +1,37 @@
 .root {
-  margin-top: 100px;
+  margin-top: 60px;
   background: linear-gradient(
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0)
+      rgba(6, 8, 26, 1),
+      rgba(6, 8, 26, 0.4),
+      rgba(6, 8, 26, 1),
+      rgba(6, 8, 26, 1)
     ),
     url("/bgs/video-bonus.png") no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 .video {
-  padding-top: 140px;
+  min-height: 100vh;
+  @media (max-width: 500px) {
+    padding: 50px 0;
+    min-height: unset;
+  }
+}
+.video_inner {
+  position: relative;
+  width: 100%;
+  height: 1000px;
   display: flex;
   justify-content: center;
   img {
-    height: auto;
-    width: 100%;
     cursor: pointer;
+  }
+  @media (max-width: 500px) {
+    height: 240px;
   }
 }
 .bonus {
   padding: 120px 0 200px 0;
-
   .header {
     display: flex;
     align-items: center;
@@ -30,12 +40,31 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 28px;
+    img {
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+    }
+    @media (max-width: 500px) {
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      p {
+        width: 85%;
+        text-align: center;
+      }
+    }
   }
   .grid {
     padding-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
+    @media (max-width: 500px) {
+      padding: 0 30px;
+      grid-template-columns: 1fr;
+    }
     div {
       display: flex;
       flex-direction: column;
@@ -63,6 +92,9 @@
         }
       }
     }
+  }
+  @media (max-width: 500px) {
+    padding: 0;
   }
 }
 .seize {
@@ -111,5 +143,9 @@
     img {
       box-shadow: 0px 0px 24px rgba(34, 245, 195, 0.35);
     }
+  }
+
+  @media (max-width: 500px) {
+    display: none;
   }
 }

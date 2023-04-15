@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
-import { Button } from "../button";
 
 export const Header = () => {
   return (

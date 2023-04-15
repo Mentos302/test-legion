@@ -10,6 +10,15 @@
     url("/bgs/team.png") no-repeat;
   background-position: bottom;
   background-size: 100% 100%;
+  @media (max-width: 500px) {
+    background: linear-gradient(
+        rgba(6, 8, 26, 1),
+        rgba(6, 8, 26, 1),
+        rgba(6, 8, 26, 0.4),
+        rgba(6, 8, 26, 0.6)
+      ),
+      url("/bgs/team.png") no-repeat;
+  }
 }
 
 .team {
@@ -17,6 +26,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
 }
 .member {
   position: relative;
@@ -63,6 +75,16 @@
     font-size: 15px;
     color: rgba(255, 255, 255, 0.4);
   }
+  @media (max-width: 500px) {
+    b {
+      font-size: 20px;
+      line-height: 31px;
+    }
+    span {
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
 }
 .links {
   display: flex;
@@ -81,6 +103,14 @@
       font-weight: 400;
       font-size: 15px;
       line-height: 22px;
+    }
+  }
+  @media (max-width: 500px) {
+    li {
+      span {
+        font-size: 12px;
+        line-height: 21px;
+      }
     }
   }
 }
@@ -125,5 +155,15 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 31px;
+  }
+}
+.bg {
+  @media (max-width: 500px) {
+    height: 510px !important;
+  }
+}
+.slider {
+  @media (max-width: 500px) {
+    display: none;
   }
 }

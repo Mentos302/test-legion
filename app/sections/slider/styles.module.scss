@@ -1,3 +1,8 @@
+.root {
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
 .control {
   margin: 40px 0;
   display: flex;
@@ -29,21 +34,30 @@
 }
 
 .primary {
-  min-height: 100%;
-  padding: 100px 0 70px 0;
+  height: 340px;
+  padding: 84.5px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: url("/bgs/experience.png") no-repeat;
   background-size: contain;
   text-align: center;
+  div {
+    width: 70%;
+    margin-left: 10%;
+  }
   b {
     font-family: "Squada One";
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
+    width: min-content;
   }
   p {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
     font-weight: 500;
     font-size: 17px;
     line-height: 29px;
@@ -56,4 +70,33 @@
 }
 .swiper_container {
   padding-left: 340px;
+}
+.secondary {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  justify-items: center;
+  padding: 0 50px;
+  gap: 30px;
+  align-items: center;
+  div {
+    height: 100%;
+    padding-top: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  b {
+    width: min-content;
+    font-family: "Squada One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+  }
+  p {
+    width: 75%;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+  }
 }

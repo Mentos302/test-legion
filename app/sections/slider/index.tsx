@@ -8,20 +8,21 @@ import { Slider } from "../../components/slider";
 export const SliderSection = () => {
   return (
     <section className={styles.root}>
-      <Slider>
+      <Slider options={{ slidesPerView: 2.5, spaceBetween: 30 }}>
         <div className={styles.primary}>
-          <b>Experience matters</b>
-          <p>
-            An Academy Award winner and award winning film professionals who
-            have worked on some of the highest grossing films of all time
-          </p>
+          <div>
+            <b>Experience matters</b>
+            <p>
+              An Academy Award winner and award winning film professionals who
+              have worked on some of the highest grossing films of all time
+            </p>
+          </div>
         </div>
         <div className={styles.secondary}>
           <Image src="/images/oscar.png" alt="Oscar" width={135} height={300} />
           <div>
             <b>Award Winners</b>
             <p>Award Winning Management Team.</p>
-            slide.png
           </div>
         </div>
         <div className={styles.secondary}>

@@ -74,9 +74,17 @@ export const UniverseSection = () => {
           <div className={styles.prev}>
             <div
               style={{ width: "100%", height: "100%", position: "relative" }}
+              className={styles.desktop}
             >
               <Image alt="Mountains" src="/bgs/card-left.png" fill={true} />
             </div>
+            <div
+              style={{ width: "100%", height: "100%", position: "relative" }}
+              className={styles.mobile}
+            >
+              <Image alt="Mountains" src="/bgs/prevs-mobile.svg" fill={true} />
+            </div>
+
             <div className={styles.inner}>
               <div className={styles.left_text}>
                 <b>Film Productions </b>
@@ -103,12 +111,20 @@ export const UniverseSection = () => {
               </div>
             </div>
           </div>
-          <div className={styles.prev}>
+          <div className={`${styles.prev} ${styles.reverse}`}>
             <div
               style={{ width: "100%", height: "100%", position: "relative" }}
+              className={styles.desktop}
             >
               <Image alt="Mountains" src="/bgs/card-right.png" fill={true} />
             </div>
+            <div
+              style={{ width: "100%", height: "100%", position: "relative" }}
+              className={styles.mobile}
+            >
+              <Image alt="Mountains" src="/bgs/prevs-mobile.svg" fill={true} />
+            </div>
+
             <div className={styles.inner}>
               <div
                 style={{
@@ -143,8 +159,19 @@ export const UniverseSection = () => {
             <div className={styles.prev}>
               <div
                 style={{ width: "100%", height: "100%", position: "relative" }}
+                className={styles.desktop}
               >
                 <Image alt="Mountains" src="/bgs/card-left.png" fill={true} />
+              </div>
+              <div
+                style={{ width: "100%", height: "100%", position: "relative" }}
+                className={styles.mobile}
+              >
+                <Image
+                  alt="Mountains"
+                  src="/bgs/prevs-mobile.svg"
+                  fill={true}
+                />
               </div>
               <div className={styles.inner}>
                 <div className={styles.left_text}>
@@ -170,11 +197,22 @@ export const UniverseSection = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.prev}>
+            <div className={`${styles.prev} ${styles.reverse}`}>
               <div
                 style={{ width: "100%", height: "100%", position: "relative" }}
+                className={styles.desktop}
               >
                 <Image alt="Mountains" src="/bgs/card-right.png" fill={true} />
+              </div>
+              <div
+                style={{ width: "100%", height: "100%", position: "relative" }}
+                className={styles.mobile}
+              >
+                <Image
+                  alt="Mountains"
+                  src="/bgs/prevs-mobile.svg"
+                  fill={true}
+                />
               </div>
               <div className={styles.inner}>
                 <div
@@ -266,6 +304,16 @@ export const UniverseSection = () => {
                 style={{ width: "100%", height: "110%", position: "relative" }}
               >
                 <Image alt="Mountains" src="/bgs/union.png" fill={true} />
+              </div>
+              <div
+                style={{ width: "100%", height: "540px" }}
+                className={styles.mobile_bg}
+              >
+                <Image
+                  alt="Mountains"
+                  src="/bgs/details-mobile.png"
+                  fill={true}
+                />
               </div>
             </div>
           </div>

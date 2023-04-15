@@ -1,7 +1,11 @@
 .wrapper {
   height: 100vh;
   max-height: 1000px;
-  background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(
+      rgba(6, 8, 26, 0.3),
+      rgba(6, 8, 26, 0.4),
+      rgba(6, 8, 26, 1)
+    ),
     url("/bgs/home-hero.png") no-repeat;
   background-size: cover;
   background-position: top;
@@ -10,12 +14,18 @@
   height: 100%;
   display: flex;
   align-items: center;
+  @media (max-width: 500px) {
+    display: block;
+  }
 }
 .inner {
   height: 100%;
   display: flex;
   align-items: center;
   gap: 50px;
+  @media (max-width: 500px) {
+    display: block;
+  }
 }
 .info {
   display: flex;
@@ -30,6 +40,13 @@
     span {
       color: #22f5c3;
     }
+    @media (max-width: 500px) {
+      margin-top: 60px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 59px;
+    }
   }
   p {
     margin-bottom: 30px;
@@ -38,5 +55,18 @@
     font-weight: 400;
     font-size: 19px;
     line-height: 31px;
+    @media (max-width: 500px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+.nft {
+  @media (max-width: 500px) {
+    display: block;
+    margin: 0 auto;
+    margin-top: 46px;
+    height: 400px;
+    width: 270px;
   }
 }

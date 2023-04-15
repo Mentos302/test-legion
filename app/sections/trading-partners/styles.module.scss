@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   position: relative;
+  @media (max-width: 500px) {
+    display: block;
+    margin-top: 80px;
+  }
 }
 .text {
   position: absolute;
@@ -17,6 +21,10 @@
     font-weight: 400;
     font-size: 75px;
     line-height: 81px;
+    @media (max-width: 500px) {
+      font-size: 45px;
+      line-height: 61px;
+    }
   }
   p {
     font-weight: 600;
@@ -28,6 +36,16 @@
       text-decoration-thickness: 4px;
       text-decoration-color: #22f5c3;
     }
+    @media (max-width: 500px) {
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
+  @media (max-width: 500px) {
+    top: 5%;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
   }
 }
 .partners {
@@ -39,5 +57,17 @@
   .logos {
     display: flex;
     gap: 20px;
+  }
+}
+.desktop {
+  display: block;
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+.mobile {
+  display: none;
+  @media (max-width: 500px) {
+    display: block;
   }
 }

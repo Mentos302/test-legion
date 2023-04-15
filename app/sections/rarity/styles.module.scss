@@ -8,12 +8,19 @@
     url("/bgs/rarity.png") no-repeat;
   background-size: cover;
   background-position: center;
+  @media (max-width: 500px) {
+    margin-top: 120px;
+    background-position: right;
+  }
 }
 .inner {
   padding-top: 100px;
   display: grid;
   grid-template-columns: 1.6fr 1fr;
   gap: 60px;
+  @media (max-width: 500px) {
+    display: block;
+  }
 }
 .meta {
   b {
@@ -38,11 +45,24 @@
     font-size: 15px;
     line-height: 26px;
   }
+  @media (max-width: 500px) {
+    b {
+      font-size: 55px;
+      line-height: 68px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
 }
 .photos {
   display: flex;
   align-items: top;
   gap: 32px;
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 .list {
   margin-top: 30px;
@@ -99,6 +119,14 @@
         color: #6a6b76;
       }
     }
+    @media (max-width: 500px) {
+      width: 100%;
+      box-sizing: border-box;
+      b {
+        font-size: 22px;
+        line-height: 37px;
+      }
+    }
   }
 
   .btns {
@@ -106,6 +134,9 @@
     display: flex;
     align-items: center;
     gap: 45px;
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+    }
   }
   .reminder {
     width: fit-content;
@@ -122,6 +153,17 @@
     color: #000;
     img {
       box-shadow: 0px 0px 24px rgba(34, 245, 195, 0.35);
+    }
+    @media (max-width: 500px) {
+      margin-left: 10px;
+      padding: 10px;
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+  .bg {
+    @media (max-width: 500px) {
+      height: 560px !important;
     }
   }
 }
